@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+body{
+    /* perspective: 700px; */
+}
+
+
+
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+
+}
+.logo img{
+    height: 70Px;
+    margin-left: 100px;
+    width: 150px;
+
+}
+a{
+    text-decoration: none;
+    color:rgb(87, 20, 20);
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size:20px;
+    font-weight: bold;
+    /* letter-spacing: 1px; */
+}
+
+.aff::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border: 2px solid rgb(87, 20, 20);
+ opacity: 0;
+}
+.aff:hover::after{
+    width: 100%;
+    height: 100%;
+    transition:1s;
+    opacity: 1;
+}
+nav li { 
+    text-align: center;
+    list-style-type: none;
+display: inline;
+position: relative;
+
+}
+nav i{
+    font-size: 25px;
+    margin-left: 20px;
+    color: rgb(46, 6, 6);
+
+}
+ul{
+    position: relative;
+}
+
+.tab{
+    position: absolute;
+    z-index: 10;
+    color: brown;
+    background-color: white;
+    border: 1px solid brown;
+    width: 350px;
+    height: 200px;
+    visibility: hidden;
+}
+.td1{
+    text-decoration:underline ;
+}
+.fur:hover .tab{
+    visibility: visible;
+    transition: 10s;
+}
+sub{
+    font-size: 20px;
+    color: rgb(87, 20, 20);
+}
+.hom {
+width: 80%;
+height: 80vh;
+margin: auto;
+background-image:url(../img/image\ copy\ 2.png) ;
+position: relative;
+}
+.hom h1 { position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size:60px ;
+    color:bisque;
+    transform:translate(-50%,-50%) ;
+    
+    
+}
+.hom button{
+    color: bisque;
+    background-color:black;
+    width: 100px;
+    height: 30px;
+}
+/* ////////////////////////////////////////////////////////////////////////// */
+.section2{
+    width: 100%;
+    height: 100vh;
+    /* height: 100vh; */
+    
+}
+.section2 h1{
+    padding: 20px  0px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.contaner{
+    width:80% ;
+    height: 50vh;
+    margin: auto;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+.card{
+    width: 24%;
+    height:100% ;
+    background-color:white;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    height: 80%;
+}
+.p1{
+    color: grey;
+    line-height: 1px;
+    line-height: 15px;
+}
+.p2{
+    line-height: 1px;
+    display: inline;
+    
+}
+.hid i{
+    text-align: center;
+    border:1px solid brown ;
+    width: 30px;
+    height: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: brown;
+    visibility: hidden;
+    margin-left:30px;
+}
+.card:hover i{
+    visibility: visible;
+}
+.parent{
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 20px;
+    /* background-color: rgb(235, 182, 182); */
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.marketing{
+    padding-top:50px ;
+    width: 45%;
+    height: 50vh;
+    background-color: rgb(233, 233, 173);
+
+}
+.marketing h2{
+    display: inline-block;
+}
+.marketing span{
+    display: block;
+    margin-left: 75px;
+    margin-top: 5px;
+}
+.marketing i{
+    font-size: 60px;
+    color: brown;
+    margin-left: 20px;
+}
+.marketing p{
+    margin-top: 20PX;
+    margin-left: 20px;
+    font-size: 15px;
+    word-spacing: 1px;
+    line-height: 25px;
+}
+.card1{
+    height: 50vh;
+    background-image: url(../img/image\ copy\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20PX;
+}
+.card2{
+    height: 50vh;
+    background-image: url(../img/image\ copy\ 15.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20PX;
+
+}
+.card1 span,.card2 span{
+    color: rgb(104, 27, 27);
+
+}
+.card1 h2,.card2 h2 {
+    color:black;
+}
+
+
+
+.card2:hover,.card1:hover{
+    transform: scale(1.07,1.07);
+    transition: 0.5S;
+
+}
+
+.contan{
+    width: 30%;
+    height: 30%;
+
+}
+.str{
+    width: 3px;
+    height: 30%;
+    background-color: brown;
+}
+.bac{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    background-image: url(../img/image\ copy\ 20.png);
+     background-position: top; 
+     background-repeat: no-repeat; 
+    transition: 0.5s;
+}
+.bac1{
+    background-image: url(../img/image\ copy\ 22.png);
+}
+.bac2{
+    background-image: url(../img/image\ copy\ 23.png);
+}
+.bac3{
+    background-image: url(../img/image\ copy\ 24.png);
+}
+.bac4{
+    background-image: url(../img/image\ copy\ 25.png);
+}
+
+
+.bac:hover{
+    background-position: bottom;
+}
+.descrip{
+width: 100%;
+height: 50%;
+text-align: center;
+}
+.descrip span{
+    color: gray;
+    font-size: 15px; 
+    text-align: start;
+}
+.last{
+    margin-top: 300px;
+    width: 100%;
+    height: 100vh;
+    /* background-color: brown; */ 
+}
+.line{
+    width: 120px;
+    height: 2px;
+    background-color:brown;
+    margin: auto;
+    margin-top: -10px;
+}
+.addres:hover .line{
+    transform: scale(2,1);
+    transition: 2s;
+}
+.list{
+    display: inline;
+    margin-left: 20px;
+
+}
+ul{
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* .pos{
+width: 25%;
+height: 50%;
+    /* position: relative; */
+    
+    /* background-color * */
+    
+
+/* } */
+/* .front img,.back img{ */
+/* width: 100%; */
+/* height: 70%; */
+
+/* } */
+/* .back,.front{ */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* position: absolute; */
+
+/* } */
+/* .front { */
+/*      */
+    /* z-index: 10; */
+    /* backface-visibility:hidden; */
+/* } */
+/* .pos:hover{ */
+    /* width: 110%; */
+    /* transform: scale(0,1); */
+    /* transform:rotatey(180deg); */
+    /* transition: 1s; */
+/*      */
+/* } */
+/* .back{ */
+    /* transform: rotatey(180deg); */
+   /* backface-visibility: hidden; */
+/* } */
+/*  */
+
+
+
+.cf{
+height: 70vh;
+    margin-top: 50px; 
+    margin-bottom: 30px;
+} 
+.cardf{
+    width: 30%;
+    height: 100%;
+}
+.front{
+    width: 100%;
+    height: 90%;
+}
+
+.front img {
+    width: 100%;
+    height:100% ;
+}
+.icons{
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.icons i{
+    margin-left: 5px;
+    font-size: 30px;
+    color: brown;
+}
+.ddd{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../img/image\ copy\ 11.png); */
+background-size: cover;
+visibility: hidden;
+}
+.overlay img{
+    width: 100%;
+    height: 100%;
+}
+.ddd:hover .overlay {
+    visibility: visible;
+    /* transition: 2s; */
+    
+    
+}
+.def{
+    margin-top: 20px;
+    color:rgb(238, 238, 45) ;
+}
